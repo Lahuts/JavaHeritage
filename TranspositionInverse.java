@@ -22,12 +22,7 @@ public class TranspositionInverse implements ProtocoleChiffremment
 	@Override
 	public String dechiffre(String message) 
 	{
-		String me = "";
-		String[] m = message.split("");
-		for(int i = m.length-1; i >=0; i--){
-			me += m[i];
-		}
-		return me;
+		return chiffre(message);
 	}
 	
 }
