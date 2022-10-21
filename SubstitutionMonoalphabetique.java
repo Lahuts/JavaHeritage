@@ -23,7 +23,7 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 
 	@Override
 	public String dechiffre(String message) {
-		return null;
+		return chiffre(message);
 	}
 
 	@Override
