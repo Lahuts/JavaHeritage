@@ -12,7 +12,8 @@ public class TranspositionInverse implements ProtocoleChiffremment
 		{
 			String me = "";
 			String[] m = message.split("");
-			for(int i = m.length-1; i >=0; i--){
+			for(int i = m.length-1; i >=0; i--)
+			{
 				me += m[i];
 			}
 			return me;

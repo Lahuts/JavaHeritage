@@ -11,11 +11,12 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 {
 	private String cle;
 	@Override
-	public String chiffre(String message) {
+	public String chiffre(String message){
 		String chif = "";
 		String[] cle = getCle().split("");
 		String[] msg = message.split("");
-		for(int i = 0; i < msg.length; i++){
+		for(int i = 0; i < msg.length; i++)
+		{
 			chif += cle[((int)msg[i].charAt(0)-97)];
 		}
 		return chif;
@@ -26,9 +27,12 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 		String chif = "";
 		String[] cle = getCle().split("");
 		String[] msg = message.split("");
-		for(int i = 0; i < msg.length; i++){
-			for(int j = 0; j < cle.length; j++){
-				if(msg[i].equals(cle[j])){
+		for(int i = 0; i < msg.length; i++)
+		{
+			for(int j = 0; j < cle.length; j++)
+			{
+				if(msg[i].equals(cle[j]))
+				{
 					chif += (char)(j+97);
 				}
 			}
@@ -37,12 +41,14 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 	}
 
 	@Override
-	public void setCle(String cle) {
+	public void setCle(String cle)
+	{
 		this.cle = cle;
 	}
 
 	@Override
-	public String getCle() {
+	public String getCle()
+	{
 		return this.cle;
 	}
 	
