@@ -3,7 +3,7 @@
  * Chiffre les messages en inversant l'ordre des lettres.
  */
 
-public class TranspositionInverse implements ProtocoleChiffremment
+public class TranspositionInverse implements ProtocoleChiffrement
 {
 
 	@Override
