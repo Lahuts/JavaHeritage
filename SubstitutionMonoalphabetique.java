@@ -23,7 +23,17 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 
 	@Override
 	public String dechiffre(String message) {
-		return chiffre(message);
+		String chif = "";
+		String[] cle = getCle().split("");
+		String[] msg = message.split("");
+		for(int i = 0; i < msg.length; i++){
+			for(int j = 0; j < cle.length; j++){
+				if(msg[i] == cle[j]){
+					chif += (char)(j+97);
+				}
+			}
+		}
+		return chif;
 	}
 
 	@Override
