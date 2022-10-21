@@ -9,9 +9,9 @@ public class TranspositionInverse implements ProtocoleChiffremment
 	@Override
 	public String chiffre(String message) 
 	{
-		String me = "";
+ 		String me = "";
 		String[] m = message.split("");
-		for(int i = m.length; i >= 0; i--){
+		for(int i = 0; i < m.length; i++){
 			me += m[i];
 		}
 		return me;
@@ -22,10 +22,11 @@ public class TranspositionInverse implements ProtocoleChiffremment
 	{
 		String me = "";
 		String[] m = message.split("");
-		for(int i = 0; i < m.length; i++){
+		for(int i = m.length; i >= 0; i--){
 			me += m[i];
 		}
 		return me;
 	}
 	
 }
+
