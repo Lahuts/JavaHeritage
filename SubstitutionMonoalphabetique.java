@@ -28,7 +28,7 @@ public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 		String[] msg = message.split("");
 		for(int i = 0; i < msg.length; i++){
 			for(int j = 0; j < cle.length; j++){
-				if(msg[i] == cle[j]){
+				if(msg[i].equals(cle[j])){
 					chif += (char)(j+97);
 				}
 			}
