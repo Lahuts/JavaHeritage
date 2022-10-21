@@ -7,7 +7,28 @@
  * etc.
  **/
 
-public class SubstitutionMonoalphabetique 
+public class SubstitutionMonoalphabetique implements ProtocoleChiffrementACle
 {
 	
+
+	@Override
+	public String chiffre(String message) {
+		return null;
 	}
+
+	@Override
+	public String dechiffre(String message) {
+		return null;
+	}
+
+	@Override
+	public void setCle(String cle) {
+		
+	}
+
+	@Override
+	public String getCle() {
+		return null;
+	}
+	
+}
